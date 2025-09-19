@@ -74,9 +74,7 @@ def setup_chinese_font():
     """
     # 方法1: 尝试使用项目中的字体文件
     font_paths = [
-        "./fonts/simhei.ttf",        # 黑体
-        "./fonts/simsun.ttc",        # 宋体 
-        "./fonts/msyh.ttc",          # 微软雅黑
+        "./fonts/simhei.ttf"      # 黑体
     ]
     
     for font_path in font_paths:
@@ -1219,9 +1217,7 @@ def create_pdf_report(diagnosis_class, confidence_level, analysis_results, llm_r
     try:
         # 方法1: 尝试使用项目中的字体文件
         font_paths = [
-            "./fonts/simhei.ttf",        # 黑体
-            "./fonts/simsun.ttc",        # 宋体 
-            "./fonts/msyh.ttc",          # 微软雅黑
+            "./fonts/simhei.ttf"
         ]
         
         font_registered = False
@@ -2330,4 +2326,5 @@ if uploaded_file is None and not st.session_state.diagnosis_completed:
 
 # 添加页脚
 st.markdown("---")
+
 st.markdown("电机故障诊断系统 🔧 2025 | 基于PyTorch和Streamlit开发")
